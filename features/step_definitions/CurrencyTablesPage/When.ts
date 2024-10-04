@@ -16,7 +16,6 @@ When(/^User selects the "(.*)" currency$/, async function (currency) {
 
 When(/^User selects the "(.*)" date$/, async function (date) {
   const page = this.page;
-
   const dateInput = page.locator('.DayPickerInput input');
   await dateInput.fill(date); 
   await page.click('body');
