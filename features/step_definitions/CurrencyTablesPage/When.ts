@@ -1,5 +1,5 @@
 import { When } from '@cucumber/cucumber';
-import { currencyOptions } from '../../config/currencyOptions'; 
+import { currencyOptions } from '../../../config/currencyOptions'; 
 
 When(/^User selects the "(.*)" currency$/, async function (currency) {
   const page = this.page; 
